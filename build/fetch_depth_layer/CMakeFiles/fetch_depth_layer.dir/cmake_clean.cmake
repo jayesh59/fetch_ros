@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
-  "/mnt/f/ROS/fetch_ros_package/devel/lib/libfetch_depth_layer.pdb"
-  "/mnt/f/ROS/fetch_ros_package/devel/lib/libfetch_depth_layer.so"
   "CMakeFiles/fetch_depth_layer.dir/src/depth_layer.cpp.o"
+  "/home/local/ASUAD/jnagpal1/git/fetch_ros/devel/lib/libfetch_depth_layer.pdb"
+  "/home/local/ASUAD/jnagpal1/git/fetch_ros/devel/lib/libfetch_depth_layer.so"
 )
 
 # Per-language clean rules from dependency scanning.

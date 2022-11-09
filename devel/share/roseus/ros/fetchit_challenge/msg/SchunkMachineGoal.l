@@ -24,15 +24,6 @@
 (intern "*END_OPERATION*" (find-package "FETCHIT_CHALLENGE::SCHUNKMACHINEGOAL"))
 (shadow '*END_OPERATION* (find-package "FETCHIT_CHALLENGE::SCHUNKMACHINEGOAL"))
 (defconstant fetchit_challenge::SchunkMachineGoal::*END_OPERATION* 3)
-
-(defun fetchit_challenge::SchunkMachineGoal-to-symbol (const)
-  (cond
-        ((= const 0) 'fetchit_challenge::SchunkMachineGoal::*OPEN*)
-        ((= const 1) 'fetchit_challenge::SchunkMachineGoal::*CLOSE*)
-        ((= const 2) 'fetchit_challenge::SchunkMachineGoal::*START_OPERATION*)
-        ((= const 3) 'fetchit_challenge::SchunkMachineGoal::*END_OPERATION*)
-        (t nil)))
-
 (defclass fetchit_challenge::SchunkMachineGoal
   :super ros::object
   :slots (_state ))

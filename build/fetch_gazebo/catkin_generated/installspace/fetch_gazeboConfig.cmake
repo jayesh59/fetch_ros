@@ -67,14 +67,14 @@ set(fetch_gazebo_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(fetch_gazebo_SOURCE_PREFIX /mnt/f/ROS/fetch_ros_package/src/fetch_gazebo)
-  set(fetch_gazebo_DEVEL_PREFIX /mnt/f/ROS/fetch_ros_package/devel)
+  set(fetch_gazebo_SOURCE_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo)
+  set(fetch_gazebo_DEVEL_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/devel)
   set(fetch_gazebo_INSTALL_PREFIX "")
   set(fetch_gazebo_PREFIX ${fetch_gazebo_DEVEL_PREFIX})
 else()
   set(fetch_gazebo_SOURCE_PREFIX "")
   set(fetch_gazebo_DEVEL_PREFIX "")
-  set(fetch_gazebo_INSTALL_PREFIX /mnt/f/ROS/fetch_ros_package/install)
+  set(fetch_gazebo_INSTALL_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/install)
   set(fetch_gazebo_PREFIX ${fetch_gazebo_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/f/ROS/fetch_ros_package/install/lib;/mnt/f/ROS/fetch_ros_package/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/local/ASUAD/jnagpal1/git/fetch_ros/install/lib;/home/local/ASUAD/jnagpal1/git/fetch_ros/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(fetch_gazebo_LIBRARIES ${fetch_gazebo_LIBRARIES})
 
   _list_append_unique(fetch_gazebo_LIBRARY_DIRS ${${fetch_gazebo_dep}_LIBRARY_DIRS})
-  _list_append_deduplicate(fetch_gazebo_EXPORTED_TARGETS ${${fetch_gazebo_dep}_EXPORTED_TARGETS})
+  list(APPEND fetch_gazebo_EXPORTED_TARGETS ${${fetch_gazebo_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "")

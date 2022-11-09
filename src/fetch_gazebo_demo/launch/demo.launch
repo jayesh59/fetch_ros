@@ -1,6 +1,7 @@
 <launch>
 
   <!-- Start navigation -->
+  <param name="robot_description" textfile="$(find fetch_description)/robots/fetch.urdf"/>
   <include file="$(find fetch_gazebo_demo)/launch/fetch_nav.launch" />
 
   <!-- Start MoveIt -->
@@ -15,5 +16,7 @@
 
   <!-- Drive to the table, pick stuff up -->
   <node name="demo" pkg="fetch_gazebo_demo" type="demo.py" output="screen" />
-
+  
+  <include file="$(find fetch_gazebo)/launch/simulation.launch" />
+  <include file="$(find fetch_moveit_config)/launch/moveit_rviz.launch"/>
 </launch>

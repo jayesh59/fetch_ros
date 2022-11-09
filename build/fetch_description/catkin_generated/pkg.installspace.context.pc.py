@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "fetch_description"
-PROJECT_SPACE_DIR = "/mnt/f/ROS/fetch_ros_package/install"
+PROJECT_SPACE_DIR = "/home/local/ASUAD/jnagpal1/git/fetch_ros/install"
 PROJECT_VERSION = "0.8.3"

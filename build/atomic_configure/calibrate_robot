@@ -1,9 +1,9 @@
-#!/usr/bin/python3
+#!/usr/bin/python2
 # -*- coding: utf-8 -*-
 # generated from catkin/cmake/template/script.py.in
 # creates a relay to a python script source file, acting as that file.
 # The purpose is that of a symlink
-python_script = '/mnt/f/ROS/fetch_ros_package/src/fetch_calibration/scripts/calibrate_robot'
+python_script = '/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration/scripts/calibrate_robot'
 with open(python_script, 'r') as fh:
     context = {
         '__builtins__': __builtins__,

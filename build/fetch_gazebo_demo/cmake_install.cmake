@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo
+# Install script for directory: /home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/f/ROS/fetch_ros_package/install")
+  set(CMAKE_INSTALL_PREFIX "/home/local/ASUAD/jnagpal1/git/fetch_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demo.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demo.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_gazebo_demo/cmake" TYPE FILE FILES
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demoConfig.cmake"
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demoConfig-version.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demoConfig.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_gazebo_demo/catkin_generated/installspace/fetch_gazebo_demoConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_gazebo_demo" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_gazebo_demo" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fetch_gazebo_demo" TYPE PROGRAM FILES
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/scripts/demo.py"
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/scripts/pick_place_demo.py"
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/scripts/tests_arm_movements.py"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/scripts/demo.py"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/scripts/pick_place_demo.py"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/scripts/tests_arm_movements.py"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_gazebo_demo" TYPE DIRECTORY FILES
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/launch"
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/maps"
-    "/mnt/f/ROS/fetch_ros_package/src/fetch_gazebo_demo/config"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/launch"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/maps"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo_demo/config"
     )
 endif()
 

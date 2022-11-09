@@ -102,16 +102,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsMessage< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsMessage< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> const>
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
 struct IsFixedSize< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> >
   : FalseType
   { };
@@ -119,6 +109,16 @@ struct IsFixedSize< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> >
 template <class ContainerAllocator>
 struct IsFixedSize< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::fetchit_challenge::SickCameraAction_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>

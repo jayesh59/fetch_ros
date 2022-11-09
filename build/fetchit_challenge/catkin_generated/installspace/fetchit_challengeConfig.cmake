@@ -67,14 +67,14 @@ set(fetchit_challenge_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(fetchit_challenge_SOURCE_PREFIX /mnt/f/ROS/fetch_ros_package/src/fetchit_challenge)
-  set(fetchit_challenge_DEVEL_PREFIX /mnt/f/ROS/fetch_ros_package/devel)
+  set(fetchit_challenge_SOURCE_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetchit_challenge)
+  set(fetchit_challenge_DEVEL_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/devel)
   set(fetchit_challenge_INSTALL_PREFIX "")
   set(fetchit_challenge_PREFIX ${fetchit_challenge_DEVEL_PREFIX})
 else()
   set(fetchit_challenge_SOURCE_PREFIX "")
   set(fetchit_challenge_DEVEL_PREFIX "")
-  set(fetchit_challenge_INSTALL_PREFIX /mnt/f/ROS/fetch_ros_package/install)
+  set(fetchit_challenge_INSTALL_PREFIX /home/local/ASUAD/jnagpal1/git/fetch_ros/install)
   set(fetchit_challenge_PREFIX ${fetchit_challenge_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /mnt/f/ROS/fetch_ros_package/install/lib;/mnt/f/ROS/fetch_ros_package/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/local/ASUAD/jnagpal1/git/fetch_ros/install/lib;/home/local/ASUAD/jnagpal1/git/fetch_ros/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)
@@ -211,7 +211,7 @@ foreach(depend ${depends})
   _unpack_libraries_with_build_configuration(fetchit_challenge_LIBRARIES ${fetchit_challenge_LIBRARIES})
 
   _list_append_unique(fetchit_challenge_LIBRARY_DIRS ${${fetchit_challenge_dep}_LIBRARY_DIRS})
-  _list_append_deduplicate(fetchit_challenge_EXPORTED_TARGETS ${${fetchit_challenge_dep}_EXPORTED_TARGETS})
+  list(APPEND fetchit_challenge_EXPORTED_TARGETS ${${fetchit_challenge_dep}_EXPORTED_TARGETS})
 endforeach()
 
 set(pkg_cfg_extras "fetchit_challenge-msg-extras.cmake")

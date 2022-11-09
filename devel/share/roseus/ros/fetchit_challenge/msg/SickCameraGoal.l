@@ -15,12 +15,6 @@
 (intern "*TRIG*" (find-package "FETCHIT_CHALLENGE::SICKCAMERAGOAL"))
 (shadow '*TRIG* (find-package "FETCHIT_CHALLENGE::SICKCAMERAGOAL"))
 (defconstant fetchit_challenge::SickCameraGoal::*TRIG* 0)
-
-(defun fetchit_challenge::SickCameraGoal-to-symbol (const)
-  (cond
-        ((= const 0) 'fetchit_challenge::SickCameraGoal::*TRIG*)
-        (t nil)))
-
 (defclass fetchit_challenge::SickCameraGoal
   :super ros::object
   :slots (_trigger ))

@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/f/ROS/fetch_ros_package/src/fetch_navigation
+# Install script for directory: /home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_navigation
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/f/ROS/fetch_ros_package/install")
+  set(CMAKE_INSTALL_PREFIX "/home/local/ASUAD/jnagpal1/git/fetch_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,29 +38,29 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/build/fetch_navigation/catkin_generated/installspace/fetch_navigation.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_navigation/catkin_generated/installspace/fetch_navigation.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation/cmake" TYPE FILE FILES
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_navigation/catkin_generated/installspace/fetch_navigationConfig.cmake"
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_navigation/catkin_generated/installspace/fetch_navigationConfig-version.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_navigation/catkin_generated/installspace/fetch_navigationConfig.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_navigation/catkin_generated/installspace/fetch_navigationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_navigation/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_navigation/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE DIRECTORY FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_navigation/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE DIRECTORY FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_navigation/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE DIRECTORY FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_navigation/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_navigation" TYPE DIRECTORY FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_navigation/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fetch_navigation" TYPE PROGRAM FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_navigation/scripts/tilt_head.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fetch_navigation" TYPE PROGRAM FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_navigation/scripts/tilt_head.py")
 endif()
 

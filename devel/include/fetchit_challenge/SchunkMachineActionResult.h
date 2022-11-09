@@ -102,16 +102,6 @@ namespace message_traits
 
 
 template <class ContainerAllocator>
-struct IsMessage< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> >
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
-struct IsMessage< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> const>
-  : TrueType
-  { };
-
-template <class ContainerAllocator>
 struct IsFixedSize< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> >
   : FalseType
   { };
@@ -119,6 +109,16 @@ struct IsFixedSize< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAll
 template <class ContainerAllocator>
 struct IsFixedSize< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> const>
   : FalseType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> >
+  : TrueType
+  { };
+
+template <class ContainerAllocator>
+struct IsMessage< ::fetchit_challenge::SchunkMachineActionResult_<ContainerAllocator> const>
+  : TrueType
   { };
 
 template <class ContainerAllocator>

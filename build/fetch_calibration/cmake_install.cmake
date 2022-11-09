@@ -1,8 +1,8 @@
-# Install script for directory: /mnt/f/ROS/fetch_ros_package/src/fetch_calibration
+# Install script for directory: /home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/mnt/f/ROS/fetch_ros_package/install")
+  set(CMAKE_INSTALL_PREFIX "/home/local/ASUAD/jnagpal1/git/fetch_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,33 +38,33 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  include("/mnt/f/ROS/fetch_ros_package/build/fetch_calibration/catkin_generated/safe_execute_install.cmake")
+  include("/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_calibration/catkin_generated/safe_execute_install.cmake")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/build/fetch_calibration/catkin_generated/installspace/fetch_calibration.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_calibration/catkin_generated/installspace/fetch_calibration.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration/cmake" TYPE FILE FILES
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_calibration/catkin_generated/installspace/fetch_calibrationConfig.cmake"
-    "/mnt/f/ROS/fetch_ros_package/build/fetch_calibration/catkin_generated/installspace/fetch_calibrationConfig-version.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_calibration/catkin_generated/installspace/fetch_calibrationConfig.cmake"
+    "/home/local/ASUAD/jnagpal1/git/fetch_ros/build/fetch_calibration/catkin_generated/installspace/fetch_calibrationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE FILE FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_calibration/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE FILE FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE DIRECTORY FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_calibration/config")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE DIRECTORY FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration/config")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE DIRECTORY FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_calibration/launch")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/fetch_calibration" TYPE DIRECTORY FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration/launch")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fetch_calibration" TYPE PROGRAM FILES "/mnt/f/ROS/fetch_ros_package/src/fetch_calibration/scripts/camera_reconfigure.py")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/fetch_calibration" TYPE PROGRAM FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_calibration/scripts/camera_reconfigure.py")
 endif()
 

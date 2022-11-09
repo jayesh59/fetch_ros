@@ -1,4 +1,4 @@
-prefix=/mnt/f/ROS/fetch_ros_package/install
+prefix=/home/local/ASUAD/jnagpal1/git/fetch_ros/install
 
 Name: fetch_moveit_config
 Description: Description of fetch_moveit_config

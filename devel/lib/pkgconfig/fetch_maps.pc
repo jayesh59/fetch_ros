@@ -1,4 +1,4 @@
-prefix=/mnt/f/ROS/fetch_ros_package/devel
+prefix=/home/local/ASUAD/jnagpal1/git/fetch_ros/devel
 
 Name: fetch_maps
 Description: Description of fetch_maps
