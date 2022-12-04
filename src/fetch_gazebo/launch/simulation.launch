@@ -7,22 +7,40 @@
 
   <!-- Start Gazebo with a blank world -->
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="debug" value="$(arg debug)" />
-    <arg name="gui" value="$(arg gui)" />
-    <arg name="paused" value="false"/>
-    <arg name="use_sim_time" value="true"/>
-    <arg name="headless" value="$(arg headless)"/>
+    <!-- <arg name="debug" value="$(arg debug)" /> -->
+    <!-- <arg name="gui" value="$(arg gui)" /> -->
+    <!-- <arg name="paused" value="false"/> -->
+    <!-- <arg name="use_sim_time" value="true"/> -->
+    <!-- <arg name="headless" value="$(arg headless)"/> -->
+    <!-- <arg name="world_name" value="$(find fetch_gazebo)/worlds/test_zone.sdf"/> -->
+    <!-- <arg name="world_name" value="/house.world"/> -->
+
   </include>
+  
+  <!-- <include file="$(find fetch_moveit_config)/launch/sensor_manager.launch"/> -->
 
   <!-- Oh, you wanted a robot? -->
   <include file="$(find fetch_gazebo)/launch/include/$(arg robot).launch.xml" />
-  
+  <node name="joint_state_publisher_gui" pkg="joint_state_publisher_gui" type="joint_state_publisher_gui" output="screen"/>
   <include file="$(find fetch_moveit_config)/launch/move_group.launch" >
     <arg name="info" value="true"/><!-- publish grasp markers -->
   </include>
-
   <include file="$(find fetch_moveit_config)/launch/moveit_rviz.launch">
     <arg name="config" value="true"/>
   </include>
+
+  <node pkg="octomap_server" type="octomap_server_node" name="octomap_server">
+		<param name="resolution" value="0.05" />
+		
+		<!-- fixed map frame (set to 'map' if SLAM or localization running!) -->
+		<param name="frame_id" type="string" value="odom" />
+		
+		<!-- maximum range to integrate (speedup!) -->
+		<param name="sensor_model/max_range" value="5.0" />
+		
+		<!-- data source to integrate (PointCloud2) -->
+		<remap from="cloud_in" to="/head_camera/depth_downsample/points" />
+	
+	</node>
 
 </launch>

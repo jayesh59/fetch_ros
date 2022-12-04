@@ -1,0 +1,8 @@
+prefix=/home/local/ASUAD/jnagpal1/git/fetch_ros/install
+
+Name: fetch_test_prep
+Description: Description of fetch_test_prep
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

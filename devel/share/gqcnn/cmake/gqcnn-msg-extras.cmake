@@ -1,0 +1,2 @@
+set(gqcnn_MESSAGE_FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/msg/GQCNNGrasp.msg;/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/msg/BoundingBox.msg;/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/msg/Action.msg;/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/msg/Observation.msg")
+set(gqcnn_SERVICE_FILES "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/srv/GQCNNGraspPlanner.srv;/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/srv/GQCNNGraspPlannerBoundingBox.srv;/home/local/ASUAD/jnagpal1/git/fetch_ros/src/gqcnn/srv/GQCNNGraspPlannerSegmask.srv")

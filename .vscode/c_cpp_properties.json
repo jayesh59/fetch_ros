@@ -1,0 +1,24 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/local/ASUAD/jnagpal1/git/fetch_ros/devel/include/**",
+        "/opt/ros/melodic/include/**",
+        "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_depth_layer/include/**",
+        "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_gazebo/include/**",
+        "/home/local/ASUAD/jnagpal1/git/fetch_ros/src/fetch_ikfast_plugin/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

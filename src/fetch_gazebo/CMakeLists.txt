@@ -3,6 +3,7 @@ project(fetch_gazebo)
 
 find_package(Boost REQUIRED)
 find_package(gazebo REQUIRED)
+find_package(octomap REQUIRED)
 
 find_package(catkin
   REQUIRED
@@ -18,6 +19,7 @@ include_directories(
   ${catkin_INCLUDE_DIRS}
   ${Boost_INCLUDE_DIR}
   ${GAZEBO_INCLUDE_DIRS}
+  ${OCTOMAP_INCLUDE_DIRS}
 )
 
 link_directories(
@@ -41,6 +43,7 @@ add_library(fetch_gazebo_plugin src/plugin.cpp)
 target_link_libraries(fetch_gazebo_plugin
   ${catkin_LIBRARIES}
   ${GAZEBO_LIBRARIES}
+  ${OCTOMAP_LIBRARIES}
 )
 
 install(

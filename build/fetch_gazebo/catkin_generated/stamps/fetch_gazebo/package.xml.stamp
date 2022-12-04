@@ -23,6 +23,8 @@
   <depend>control_toolbox</depend>
   <depend>boost</depend>
   <depend>gazebo_plugins</depend>
+  <build_depend>octomap</build_depend>
+
   <depend>gazebo_ros</depend>
   <depend>robot_controllers</depend>
   <depend>robot_controllers_interface</depend>
